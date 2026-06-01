@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bow Berry | Premium Hair Accessories</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Playfair Display & Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom Pink Palette to match 60739.jpg */
+        .bg-bowpink { background-color: #F498C2; }
+        .bg-bowpink-light { background-color: #FFF0F6; }
+        .text-bowpink { color: #F498C2; }
+        .text-berry { color: #A8255B; }
+        .border-bowpink { border-color: #F498C2; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 overflow-x-hidden">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-bowpink text-white text-xs font-medium py-2 text-center tracking-wide">
+        ✨ FREE SHIPPING ON ORDERS OVER ₹499! MADE WITH LOVE ✨
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-40 bg-white/90 backdrop-blur-md shadow-sm border-b border-pink-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden text-gray-600 hover:text-bowpink focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+
+            <!-- Navigation Links (Left) -->
+            <div class="hidden md:flex space-x-8 font-medium text-sm tracking-wider uppercase text-gray-600">
+                <a href="#shop" class="hover:text-bowpink transition">Shop All</a>
+                <a href="#collections" class="hover:text-bowpink transition">Collections</a>
+                <a href="#about" class="hover:text-bowpink transition">Our Story</a>
+            </div>
+
+            <!-- Brand Logo (Center) -->
+            <a href="#" class="flex flex-col items-center justify-center transform hover:scale-105 transition duration-300">
+                <span class="serif-font text-2xl lg:text-3xl font-black text-berry tracking-tight">Bow Berry</span>
+                <span class="text-[9px] uppercase tracking-[0.25em] font-semibold text-gray-400 -mt-1">Hair Accessories</span>
+            </a>
+
+            <!-- Icons (Right) -->
+            <div class="flex items-center space-x-6 text-gray-600">
+                <a href="#" class="hover:text-bowpink transition hidden sm:inline-block"><i class="fa-solid fa-magnifying-glass text-lg"></i></a>
+                <a href="#" class="hover:text-bowpink transition hidden sm:inline-block"><i class="fa-regular fa-user text-lg"></i></a>
+                <!-- Cart Trigger Button -->
+                <button onclick="toggleCart()" class="relative hover:text-bowpink transition focus:outline-none p-1">
+                    <i class="fa-solid fa-bag-shopping text-xl"></i>
+                    <span id="cart-count" class="absolute -top-1 -right-1 bg-berry text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center shadow-sm">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="relative bg-bowpink-light overflow-hidden py-16 lg:py-24">
+        <!-- Abstract background blobs for aesthetic touch -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 -mr-20 -mt-20"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 -ml-20 -mb-20"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- Text Content -->
+            <div class="space-y-6 text-center md:text-left">
+                <span class="inline-block bg-white text-berry font-semibold text-xs tracking-widest uppercase px-3 py-1.5 rounded-full shadow-sm border border-pink-100">
+                    💝 New Season Drop
+                </span>
+                <h1 class="serif-font text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                    Elevate your everyday <span class="text-berry">hair game</span>.
+                </h1>
+                <p class="text-gray-600 text-base sm:text-lg max-w-md mx-auto md:mx-0 font-light">
+                    Handmade, premium, and trendy hair aesthetics crafted to make you stand out. Find your perfect match.
+                </p>
+                <div class="pt-4">
+                    <a href="#shop" class="inline-block bg-berry text-white font-medium text-sm uppercase tracking-wider px-8 py-4 rounded-xl shadow-lg shadow-pink-900/10 hover:bg-opacity-90 transform hover:-translate-y-0.5 transition duration-200">
+                        Explore Collection <i class="fa-solid fa-arrow-right-long ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Graphic Placeholder Box representing the Bow Berry aesthetic -->
+            <div class="flex justify-center">
+                <div class="relative w-full max-w-sm aspect-square bg-bowpink rounded-3xl shadow-2xl flex flex-col items-center justify-center p-8 text-white transform rotate-2 hover:rotate-0 transition duration-500 overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-pink-600/20 to-transparent"></div>
+                    <!-- Sparkle Icons mirroring the logo branding -->
+                    <i class="fa-solid fa-sparkles absolute top-10 right-10 text-white/40 text-2xl animate-pulse"></i>
+                    
+                    <!-- Verbatim visual placeholder for Bow Berry Identity -->
+                    <h2 class="serif-font text-5xl font-black tracking-wide text-center drop-shadow-md">Bow Berry</h2>
+                    <p class="text-xs uppercase tracking-[0.3em] font-medium mt-2 opacity-90">Hair Accessories</p>
+                    
+                    <div class="absolute bottom-6 left-6 right-6 bg-white/20 backdrop-blur-md rounded-xl p-4 text-center border border-white/20 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-105 transition duration-300">
+                        <span class="text-xs font-semibold tracking-wider uppercase">Handmade Styles ✨</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CORE VALUE PROPOSITIONS -->
+    <section class="bg-white border-y border-pink-100 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="space-y-2">
+                <div class="text-bowpink text-2xl"><i class="fa-solid fa-heart"></i></div>
+                <h3 class="font-semibold text-sm text-gray-900">Handmade with Love</h3>
+                <p class="text-xs text-gray-500">Every piece is uniquely crafted</p>
+            </div>
+            <div class="space-y-2">
+                <div class="text-bowpink text-2xl"><i class="fa-solid fa-crown"></i></div>
+                <h3 class="font-semibold text-sm text-gray-900">Premium Quality</h3>
+                <p class="text-xs text-gray-500">Top tier fabrics & secure clips</p>
+            </div>
+            <div class="space-y-2">
+                <div class="text-bowpink text-2xl"><i class="fa-solid fa-truck-fast"></i></div>
+                <h3 class="font-semibold text-sm text-gray-900">Quick Delivery</h3>
+                <p class="text-xs text-gray-500">Dispatched straight to you</p>
+            </div>
+            <div class="space-y-2">
+                <div class="text-bowpink text-2xl"><i class="fa-solid fa-rotate-left"></i></div>
+                <h3 class="font-semibold text-sm text-gray-900">Easy Returns</h3>
+                <p class="text-xs text-gray-500">100% satisfaction guarantee</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOPPING MAIN GRID -->
+    <section id="shop" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        <div class="text-center max-w-xl mx-auto mb-16 space-y-3">
+            <h2 class="serif-font text-3xl sm:text-4xl font-bold text-gray-900">Our Best Sellers</h2>
+            <div class="h-1 w-16 bg-bowpink mx-auto rounded-full"></div>
+            <p class="text-gray-500 text-sm">Add a pop of color and charm to your look with our hyper-popular hair pieces.</p>
+        </div>
+
+        <!-- Product Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
+            
+            <!-- Card 1 -->
+            <div class="group relative bg-white rounded-2xl p-3 shadow-sm border border-gray-100 hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-full aspect-square bg-bowpink-light rounded-xl overflow-hidden relative flex items-center justify-center">
+                        <span class="text-xs uppercase bg-white text-berry font-bold px-2.5 py-1 rounded-md absolute top-3 left-3 shadow-sm z-10">Hot</span>
+                        <i class="fa-solid fa-ribbon text-pink-300 text-7xl group-hover:scale-110 transition duration-300"></i>
+                    </div>
+                    <div class="mt-4 px-2">
+                        <h3 class="text-sm font-semibold text-gray-800">Classic Pastel Pink Hair Bow</h3>
+                        <p class="text-xs text-gray-400 mt-0.5">Satin Oversized Ribbon Clip</p>
+                    </div>
+                </div>
+                <div class="mt-4 px-2 pb-2 flex items-center justify-between">
+                    <span class="font-bold text-gray-900 text-base">₹199</span>
+                    <button onclick="addToCart('Classic Pastel Pink Hair Bow', 199)" class="bg-gray-900 text-white hover:bg-bowpink text-xs font-semibold px-4 py-2 rounded-xl transition duration-200 focus:outline-none">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="group relative bg-white rounded-2xl p-3 shadow-sm border border-gray-100 hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-full aspect-square bg-pink-100 rounded-xl overflow-hidden relative flex items-center justify-center">
+                        <i class="fa-solid fa-circle-notch text-pink-300 text-7xl group-hover:scale-110 transition duration-300"></i>
+                    </div>
+                    <div class="mt-4 px-2">
+                        <h3 class="text-sm font-semibold text-gray-800">Berry Blossom Silk Scrunchie</h3>
+                        <p class="text-xs text-gray-400 mt-0.5">100% Pure Mulberry Silk</p>
+                    </div>
+                </div>
+                <div class="mt-4 px-2 pb-2 flex items-center justify-between">
+                    <span class="font-bold text-gray-900 text-base">₹149</span>
+                    <button onclick="addToCart('Berry Blossom Silk Scrunchie', 149)" class="bg-gray-900 text-white hover:bg-bowpink text-xs font-semibold px-4 py-2 rounded-xl transition duration-200 focus:outline-none">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="group relative bg-white rounded-2xl p-3 shadow-sm border border-gray-100 hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-full aspect-square bg-bowpink-light rounded-xl overflow-hidden relative flex items-center justify-center">
+                        <i class="fa-solid fa-wand-magic-sparkles text-pink-300 text-7xl group-hover:scale-110 transition duration-300"></i>
+                    </div>
+                    <div class="mt-4 px-2">
+                        <h3 class="text-sm font-semibold text-gray-800">Sparkle Star Claw Clip</h3>
+                        <p class="text-xs text-gray-400 mt-0.5">Glossy Pastel Acetate Clip</p>
+                    </div>
+                </div>
+                <div class="mt-4 px-2 pb-2 flex items-center justify-between">
+                    <span class="font-bold text-gray-900 text-base">₹249</span>
+                    <button onclick="addToCart('Sparkle Star Claw Clip', 249)" class="bg-gray-900 text-white hover:bg-bowpink text-xs font-semibold px-4 py-2 rounded-xl transition duration-200 focus:outline-none">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="group relative bg-white rounded-2xl p-3 shadow-sm border border-gray-100 hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-full aspect-square bg-purple-100 rounded-xl overflow-hidden relative flex items-center justify-center">
+                        <span class="text-xs uppercase bg-berry text-white font-bold px-2.5 py-1 rounded-md absolute top-3 left-3 shadow-sm z-10">New</span>
+                        <i class="fa-solid fa-heart text-pink-300 text-7xl group-hover:scale-110 transition duration-300"></i>
+                    </div>
+                    <div class="mt-4 px-2">
+                        <h3 class="text-sm font-semibold text-gray-800">Velvet Heart Headband</h3>
+                        <p class="text-xs text-gray-400 mt-0.5">Comfort-fit padded band</p>
+                    </div>
+                </div>
+                <div class="mt-4 px-2 pb-2 flex items-center justify-between">
+                    <span class="font-bold text-gray-900 text-base">₹299</span>
+                    <button onclick="addToCart('Velvet Heart Headband', 299)" class="bg-gray-900 text-white hover:bg-bowpink text-xs font-semibold px-4 py-2 rounded-xl transition duration-200 focus:outline-none">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- INSTAGRAM OUTREACH BANNER -->
+    <section class="bg-white py-16 border-t border-pink-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <div class="text-pink-400 text-4xl"><i class="fa-brands fa-instagram"></i></div>
+            <h2 class="serif-font text-3xl font-bold text-gray-900">Follow Our Aesthetic Journey</h2>
+            <p class="text-gray-500 text-sm max-w-md mx-auto">Tag us wearing your accessories to get featured on our feed!</p>
+            <a href="https://instagram.com/_bow.berry_" target="_blank" class="inline-block text-berry font-bold text-base hover:underline tracking-wide">
+                @_bow.berry_
+            </a>
+            
+            <!-- Instagram visual gallery placeholders -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-6">
+                <div class="aspect-square bg-bowpink-light rounded-xl flex items-center justify-center border border-pink-100 font-medium text-xs text-pink-400 tracking-wider">#BowBerryStyle</div>
+                <div class="aspect-square bg-pink-100 rounded-xl flex items-center justify-center border border-pink-100 font-medium text-xs text-pink-400 tracking-wider">☘️ Handmade Vibes</div>
+                <div class="aspect-square bg-bowpink-light rounded-xl flex items-center justify-center border border-pink-100 font-medium text-xs text-pink-400 tracking-wider">✨ Cute Coquette</div>
+                <div class="aspect-square bg-purple-50 rounded-xl flex items-center justify-center border border-pink-100 font-medium text-xs text-pink-400 tracking-wider">🌸 Pretty in Pink</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex flex-col items-center md:items-start">
+                <span class="serif-font text-xl font-bold text-white tracking-tight">Bow Berry</span>
+                <span class="text-[10px] uppercase tracking-[0.2em] font-semibold text-gray-500 mt-0.5">Hair Accessories Store</span>
+            </div>
+            <p class="text-xs text-center md:text-left">
+                &copy; 2026 Bow Berry. Built for the perfect aesthetic. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- SLIDE-OUT CART SIDEBAR (INTERACTIVE JavaScript backend) -->
+    <div id="cart-sidebar" class="fixed inset-0 z-50 overflow-hidden hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
+        <div class="absolute inset-0 overflow-hidden">
+            <!-- Backdrop overlay -->
+            <div onclick="toggleCart()" class="absolute inset-0 bg-gray-500 bg-opacity-40 backdrop-blur-xs transition-opacity" aria-hidden="true"></div>
+            
+            <div class="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
+                <div class="pointer-events-auto w-screen max-w-md bg-white shadow-2xl flex flex-col justify-between">
+                    <!-- Cart Top Header -->
+                    <div class="px-6 py-6 bg-bowpink-light border-b border-pink-100 flex items-center justify-between">
+                        <h2 class="serif-font text-lg font-bold text-gray-900"><i class="fa-solid fa-bag-shopping text-berry mr-2"></i> Your Shopping Bag</h2>
+                        <button onclick="toggleCart()" class="text-gray-400 hover:text-gray-500 focus:outline-none p-2">
+                            <i class="fa-solid fa-xmark text-lg"></i>
+                        </button>
+                    </div>
+
+                    <!-- Cart Content Container -->
+                    <div class="flex-1 overflow-y-auto px-6 py-4" id="cart-items-container">
+                        <!-- Empty Cart Message Placeholder -->
+                        <div id="empty-cart-msg" class="h-full flex flex-col items-center justify-center text-center space-y-3 py-12">
+                            <div class="text-pink-200 text-5xl"><i class="fa-solid fa-heart-crack"></i></div>
+                            <p class="text-sm font-medium text-gray-500">Your bag is completely empty!</p>
+                            <button onclick="toggleCart()" class="text-xs text-berry font-bold hover:underline">Start shopping templates</button>
+                        </div>
+                        <!-- Dynamic list renders here -->
+                        <ul id="cart-items-list" class="divide-y divide-gray-100 hidden"></ul>
+                    </div>
+
+                    <!-- Cart Summary/Checkout Details -->
+                    <div class="border-t border-gray-100 px-6 py-6 bg-gray-50 space-y-4">
+                        <div class="flex justify-between text-base font-medium text-gray-900">
+                            <p>Subtotal</p>
+                            <p id="cart-total-price">₹0</p>
+                        </div>
+                        <p class="text-xs text-gray-500">Taxes and shipping calculated at checkout window.</p>
+                        <div>
+                            <button onclick="alert('Order Feature Coming Soon! Template is operational.')" class="w-full flex items-center justify-center rounded-xl bg-berry text-white px-6 py-3.5 text-sm font-semibold shadow-md hover:bg-opacity-90 transition duration-200">
+                                Proceed to Checkout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SIMPLE VANILLA JAVASCRIPT CART STATE CONTROLLER -->
+    <script>
+        let cartState = [];
+
+        function toggleCart() {
+            const sidebar = document.getElementById('cart-sidebar');
+            sidebar.classList.toggle('hidden');
+        }
+
+        function addToCart(name, price) {
+            // Check if product already exists in item state
+            const existingItem = cartState.find(item => item.name === name);
+            if (existingItem) {
+                existingItem.qty += 1;
+            } else {
+                cartState.push({ name, price, qty: 1 });
+            }
+            updateCartUI();
+            
+            // Auto open sidebar to give immediate visual feedback
+            document.getElementById('cart-sidebar').classList.remove('hidden');
+        }
+
+        function updateCartUI() {
+            const countBadge = document.getElementById('cart-count');
+            const emptyMsg = document.getElementById('empty-cart-msg');
+            const itemsList = document.getElementById('cart-items-list');
+            const totalText = document.getElementById('cart-total-price');
+            
+            // Calculate total badge counts
+            const totalQty = cartState.reduce((sum, item) => sum + item.qty, 0);
+            countBadge.innerText = totalQty;
+
+            if (cartState.length === 0) {
+                emptyMsg.classList.remove('hidden');
+                itemsList.classList.add('hidden');
+                totalText.innerText = "₹0";
+                return;
+            }
+
+            emptyMsg.classList.add('hidden');
+            itemsList.classList.remove('hidden');
+
+            // Render out active list elements
+            itemsList.innerHTML = '';
+            let totalCost = 0;
+
+            cartState.forEach((item, index) => {
+                totalCost += (item.price * item.qty);
+                const li = document.createElement('li');
+                li.className = 'py-4 flex items-center justify-between text-sm';
+                li.innerHTML = `
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-bowpink-light rounded-lg flex items-center justify-center text-bowpink"><i class="fa-solid fa-sparkles text-xs"></i></div>
+                        <div>
+                            <p class="font-semibold text-gray-800">${item.name}</p>
+                            <p class="text-xs text-gray-400">₹${item.price} &times; ${item.qty}</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="font-bold text-gray-900">₹${item.price * item.qty}</span>
+                        <button onclick="removeFromCart(${index})" class="text-gray-400 hover:text-red-500 p-1"><i class="fa-regular fa-trash-can"></i></button>
+                    </div>
+                `;
+                itemsList.appendChild(li);
+            });
+
+            totalText.innerText = "₹" + totalCost;
+        }
+
+        function removeFromCart(index) {
+            cartState.splice(index, 1);
+            updateCartUI();
+        }
+    </script>
+</body>
+</html>
